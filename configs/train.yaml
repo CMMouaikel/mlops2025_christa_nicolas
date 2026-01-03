@@ -1,0 +1,10 @@
+data:
+  train_path: "src/mlproject/data/train.csv"
+  test_path: "src/mlproject/data/test.csv"
+  processed_dir: "src/mlproject/data/processed"
+  features_dir: "src/mlproject/data/features"
+
+preprocessing:
+  drop_zero_duration: true
+  max_duration_hours: 24
+  speed_threshold_mph: 100
