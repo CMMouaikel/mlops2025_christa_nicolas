@@ -2,4 +2,6 @@ __pycache__/
 .venv/
 *.pyc
 src/mlproject/data/*.csv
+src/mlproject/data/processed/
+src/mlproject/data/features/
 uv.lock
