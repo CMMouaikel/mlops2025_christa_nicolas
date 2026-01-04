@@ -1,0 +1,15 @@
+sagemaker:
+  role: "arn:aws:iam::YOUR_ACCOUNT_ID:role/SageMakerExecutionRole"
+  region: "us-east-1"
+  bucket: "your-sagemaker-bucket"
+  instance_type: "ml.m5.xlarge"
+  instance_count: 1
+  
+pipeline:
+  training:
+    name: "nyc-taxi-training-pipeline"
+    description: "Training pipeline for NYC Taxi Duration prediction"
+  
+  inference:
+    name: "nyc-taxi-inference-pipeline"
+    description: "Batch inference pipeline for NYC Taxi Duration prediction"
