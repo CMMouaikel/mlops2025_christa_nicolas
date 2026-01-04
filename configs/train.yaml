@@ -9,6 +9,19 @@ preprocessing:
   max_duration_hours: 24
   speed_threshold_mph: 100
 
+features:
+  time_features:
+    - hour
+    - day_of_week
+    - month
+    - is_weekend
+  distance_features:
+    - haversine_distance
+    - manhattan_distance
+  categorical_features:
+    - vendor_id
+    - passenger_count
+
 model:
   output_dir: "outputs/models"
   metrics_dir: "outputs/metrics"
