@@ -1,4 +1,4 @@
-data:
+﻿data:
   train_path: "src/mlproject/data/train.csv"
   test_path: "src/mlproject/data/test.csv"
   processed_dir: "src/mlproject/data/processed"
@@ -8,3 +8,28 @@ preprocessing:
   drop_zero_duration: true
   max_duration_hours: 24
   speed_threshold_mph: 100
+
+model:
+  output_dir: "outputs/models"
+  metrics_dir: "outputs/metrics"
+  models:
+    - name: "random_forest"
+      params:
+        n_estimators: 50
+        max_depth: 8
+        min_samples_split: 5
+        random_state: 42
+        n_jobs: -1
+    - name: "xgboost"
+      params:
+        n_estimators: 50
+        max_depth: 6
+        learning_rate: 0.1
+        subsample: 0.8
+        colsample_bytree: 0.8
+        random_state: 42
+
+train:
+  test_size: 0.2
+  random_state: 42
+  metric: "rmse"
