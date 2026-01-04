@@ -9,7 +9,7 @@ preprocessing:
   max_duration_hours: 24
   speed_threshold_mph: 100
 
-  features:
+features:
   time_features:
     - hour
     - day_of_week
