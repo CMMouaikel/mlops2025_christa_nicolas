@@ -1,1 +1,18 @@
-# Nothing here either
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: mlops-nyc-taxi
+    volumes:
+      - ./outputs:/app/outputs
+      - ./src/mlproject/data:/app/src/mlproject/data
+      - ./configs:/app/configs
+      - ./scripts:/app/scripts
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app/src
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    
