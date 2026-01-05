@@ -29,6 +29,7 @@ This project implements an end-to-end MLOps pipeline for predicting taxi trip du
 
 ## Project Structure
 
+```text
 mlops2025_christa_nicolas/
 ├── configs/
 │   ├── train.yaml              # Training configuration
@@ -62,13 +63,13 @@ mlops2025_christa_nicolas/
 │   └── batch_inference.py      # Standalone inference
 ├── tests/
 │   └── test_preprocess.py      # Unit tests
-├── notebooks/                   # Exploratory analysis
+├── notebooks/                  # Exploratory analysis
 ├── outputs/
 │   ├── models/                 # Trained models
 │   └── metrics/                # Training metrics
 ├── Dockerfile                  # Container definition
 ├── docker-compose.yml          # Multi-container orchestration
-├── pyproject.toml             # Project dependencies
+├── pyproject.toml              # Project dependencies
 └── README.md
 
 
