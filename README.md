@@ -71,7 +71,7 @@ mlops2025_christa_nicolas/
 ├── docker-compose.yml          # Multi-container orchestration
 ├── pyproject.toml              # Project dependencies
 └── README.md
-
+```
 
 
 ### Directory Breakdown
